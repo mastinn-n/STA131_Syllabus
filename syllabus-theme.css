@@ -1,0 +1,102 @@
+/* ── Palette ── */
+:root {
+  --accent:      #5B8DB8;
+  --accent-dark: #3D6A8A;
+  --accent-bg:   #EBF3FB;
+  --warm:        #E87D4F;
+  --warm-bg:     #FEF1EB;
+  --section-bg:  #F7FAFE;
+  --rule-color:  #BDD4EA;
+  --text:        #2B3A47;
+}
+
+
+.course-vision {
+  max-width: 800px;
+  margin: 1.5rem auto 2rem auto; /* top right/left bottom */
+  padding: 0;
+  font-size: 1.05rem;
+  line-height: 1.75;
+}
+
+.course-vision h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.course-vision p {
+  margin: 0;
+}
+/* ── Page ── */
+body {
+  background-color: var(--section-bg);
+  color: var(--text);
+}
+
+/* ── Title block ── */
+.quarto-title-block .title {
+  color: var(--accent-dark);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+/* ── Section headings ── */
+h2 {
+  color: var(--accent-dark);
+  border-bottom: 2px solid var(--rule-color);
+  padding-bottom: 0.25rem;
+  margin-top: 2rem;
+}
+
+/* ── Horizontal rules ── */
+hr {
+  border-color: var(--rule-color);
+  opacity: 1;
+}
+
+/* ── Links ── */
+a {
+  color: var(--accent);
+}
+a:hover {
+  color: var(--accent-dark);
+  text-decoration: underline;
+}
+
+/* ── Tables ── */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  background: #ffffff;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+}
+thead tr {
+  background-color: var(--accent);
+  color: #ffffff;
+}
+thead th {
+  padding: 0.55rem 0.85rem;
+  font-weight: 600;
+}
+tbody tr:nth-child(even) {
+  background-color: var(--accent-bg);
+}
+tbody td {
+  padding: 0.45rem 0.85rem;
+}
+
+/* ── Callout ── */
+.callout-note {
+  background-color: var(--warm-bg);
+  border-left: 4px solid var(--warm);
+  border-radius: 4px;
+}
+
+/* ── Warm inline highlights (replaces red spans) ── */
+.highlight {
+  color: var(--warm);
+  font-weight: 600;
+}
